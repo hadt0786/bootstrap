@@ -1,0 +1,48 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gutter example</title>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"/>
+
+
+    <style>
+    .gold-box{
+        width: 100px;
+        height: 150px;
+        border: 3px solid gold; 
+    }
+    div.row{
+        border : 3px solid red;
+        height: 200px;
+    }
+    [class|=col]{
+        border:3px solid blue;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="constainer-fluid">
+
+        <div class="row no-gutter">
+
+            <div class="col">FIrst column. <div class="gold-box"></div>
+            </div>
+        
+
+        
+
+            <div class="col">second column. <div class="gold-box"></div>
+            </div>
+
+            </div>
+        
+    </div>
+
+</body>
+
+</html>
