@@ -1,0 +1,66 @@
+<!-- ****************************************************
++ Description : Custom Toggle button
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>My toggle button</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style type="text/css" media="screen">
+        #nav-links li {
+            display: block;
+            list-style-type: none;
+            padding-right: 20px;
+            font-size: 1.2em;
+        }
+
+        #btn-toggle {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        function toggle(idList, idControl) {
+            var list = document.getElementById(idList);
+
+            if (list.style.display != 'none') {
+                /* Hide the menu */
+                list.style.display = 'none';
+                document.getElementById(idControl).setAttribute('aria-expanded', 'false');
+            } else {
+                /* Restore the previous display */
+                list.style.display = 'block';
+                document.getElementById(idControl).setAttribute('aria-expanded', 'true');
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- Since list is not displayed initially, set the
+        + aria-expanded attribute to false -->
+    <input type="button" aria-expanded="false" id="btn-toggle" href="#" onclick="toggle('nav-links', 'btn-toggle')" value="Tgl" />
+
+    <!-- Do not display the list when page is loaded -->
+    <ul id="nav-links" style="display:none;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Delhi</a></li>
+        <li><a href="#">Bangalore</a></li>
+        <li><a href="#">Mumbai</a></li>
+    </ul>
+
+</body>
+
+</html>

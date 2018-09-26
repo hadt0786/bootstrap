@@ -1,0 +1,70 @@
+<!-- ***********************************************************
++ Description : Navbar Alignment
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++*********************************************************** -->
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Navbar Alignment</title>
+</head>
+
+<body>
+
+    <!-- Fixed Navigation Bar (try with fixed-bottom also) -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="#">
+        <img src="./images/bootstrap-solid.svg" width="30" height="30" alt="image">
+        </a>
+        <!-- Toggle button 
+        + It is important to specify data-toggle, data-target 
+        + and aria-controls -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-menu" aria-controls="my-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="my-menu">
+            
+        <!-- Use utility classes ml-auto, mr-auto or mx-auto 
+        + for the alignment of navbar items
+        + -->            
+            
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Delhi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mumbai</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div> <!-- Collapse End -->
+        
+    </nav> <!-- navbar -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./../jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="./../popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="./../bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

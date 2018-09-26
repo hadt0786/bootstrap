@@ -1,0 +1,89 @@
+<!-- ****************************************************
++ Description : Form grid
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Form grid</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <form>
+            
+            <div class="form-row mt-3">
+                <div class="form-group col-md-6">
+                    <label for="firstName" class="d-none d-md-inline-block">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName" class="d-none d-md-inline-block">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+            </div> <!-- row -->            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email" class="d-none d-md-inline-block">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="pwd" class="d-none d-md-inline-block">Password</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Password">
+                </div>
+            </div> <!-- row -->
+
+            <div class="form-group">
+                <label for="address1" class="d-none d-md-inline-block">Address 1</label>
+                <input type="text" class="form-control" id="address1" placeholder="Address 1">
+            </div>
+
+            <div class="form-group">
+                <label for="address2" class="d-none d-md-inline-block">Address 2</label>
+                <input type="text" class="form-control" id="address2" placeholder="Address 2">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city" class="d-none d-md-inline-block">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state" class="d-none d-md-inline-block">State</label>
+                    <select id="state" class="form-control">
+                        <option selected>State...</option>
+                        <option>Chennai</option>
+                        <option>Delhi</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="zip" class="d-none d-md-inline-block">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="Zip">
+                </div>
+            </div> <!-- row -->
+
+            <button type="submit" class="btn btn-primary w-100">Sign in</button>
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./../jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="./../popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="./../bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

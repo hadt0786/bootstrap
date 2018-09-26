@@ -1,0 +1,64 @@
+<!-- ****************************************************
++ Description : Flex Warp
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Flex Warp</title>
+    <style>
+        
+        div.container {
+            border: 2px solid blue;
+        }
+        
+        [class~=d-sm-flex] {
+            background-color: skyblue;
+            height: auto;
+        }
+        
+        .flex-item {
+            border: 2px solid goldenrod;
+            background-color: gold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <!-- default nowrap -->
+        <div class="d-flex flex-wrap flex-md-nowrap justify-content-around">
+            <!-- flex items -->
+            <div class="flex-item">
+                <p>Flex item 1 : Tom jumped on jerry, but, clever jerry escaped. Tom jumped on jerry, but, clever jerry escaped. Tom jumped on jerry, but, clever jerry escaped.</p>
+            </div>
+            
+            <div class="flex-item">
+                <p>Flex item 2 : Tom jumped on jerry, but, clever jerry escaped. Tom jumped on jerry, but, clever jerry escaped. Tom jumped on jerry, but, clever jerry escaped.</p>
+            </div>  
+            
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./../jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="./../popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="./../bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

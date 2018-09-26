@@ -1,0 +1,77 @@
+<!-- ****************************************************
++ Description : Inline form
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Inline form</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <form class="form-group">
+
+            <!-- fieldset is used here to disables all the fields -->
+            <fieldset disabled>
+
+                <label for="emailAddress">Email address:</label>
+                <input type="email" class="form-control" id="emailAddress">
+
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+
+                <div class="form-check">
+                    <label class="form-check-label"><input type="checkbox" class="form-check-input">Remember me
+                    </label>
+                </div>
+
+            </fieldset>
+            
+            <br>
+            <p>Select your favorite fruit.</p>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="fruit-options" value="mango">Mango
+                </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="fruit-options" value="guava">Guava
+                </label>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <!-- Disabling individual input -->
+                    <input type="radio" class="form-check-input" name="fruit-options" value="grapes" disabled>Grapes
+                </label>
+                </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./../jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="./../popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="./../bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

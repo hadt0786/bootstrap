@@ -1,0 +1,61 @@
+<!-- ****************************************************
++ Description : Margin
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Margin</title>
+    <style>
+        div.container {
+            border: 2px solid red;
+        }
+
+        div.row {
+            border: 2px solid green;
+            height: 100px;
+        }
+
+        [class|=col] {
+            border: 3px solid blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+        </div>
+        <div class="row">
+            <div class="col-auto mr-auto">.col-auto **********------------.mr-auto</div>
+            <div class="col-auto">.col-auto</div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./../jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="./../popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="./../bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
